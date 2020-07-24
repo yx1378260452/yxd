@@ -17,7 +17,7 @@ public:
 	another(){
 		aaa=100;}
 	friend void Base::print(const another &k);//基类的成员函数声明为本类的友元
-};
+}
 void Base::print(const another &k){
 	cout<<"Base"<<k.aaa<<endl;//可以访问私有成员变量
 }
